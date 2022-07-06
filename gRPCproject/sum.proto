@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+package sum;
+
+message SumRequest {
+	int32 a = 1;
+	int32 b = 2;
+}
+
+message SumResponse { 
+	int32 result = 1;
+}
+
+message PrimeNumberDecompRequest {
+	int32 num = 1;
+}
+
+message PrimeNumberDecompResponse {
+	int32 primenum = 1;
+}
+
+message ComputeAverageRequest {
+	int32 num = 1;
+}
+
+message ComputeAverageResponse {
+	double averageCalc = 1;
+}
+
+message FindMaxRequest {
+	int32 num = 1;
+}
+message FindMaxResponse {
+	int32 result = 1;
+}
+
+service SumService {
+	rpc Sum (SumRequest) returns (SumResponse) { }
+
+	rpc Prime (PrimeNumberDecompRequest) returns (stream PrimeNumberDecompResponse) {}
+
+	rpc Average (stream ComputeAverageRequest) returns (ComputeAverageResponse) {}
+
+	rpc Max (stream FindMaxRequest) returns (stream FindMaxResponse) {}
+}

@@ -1,0 +1,186 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "server/1.0.0": {
+        "dependencies": {
+          "Google.Protobuf": "3.21.2",
+          "Grpc": "2.46.3",
+          "Grpc.AspNetCore.Server": "2.47.0",
+          "Grpc.Core": "2.46.3",
+          "Grpc.Core.Api": "2.47.0",
+          "Grpc.Tools": "2.48.0-pre1"
+        },
+        "runtime": {
+          "server.dll": {}
+        }
+      },
+      "Google.Protobuf/3.21.2": {
+        "dependencies": {
+          "System.Memory": "4.5.3",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Protobuf.dll": {
+            "assemblyVersion": "3.21.2.0",
+            "fileVersion": "3.21.2.0"
+          }
+        }
+      },
+      "Grpc/2.46.3": {
+        "dependencies": {
+          "Grpc.Core": "2.46.3"
+        }
+      },
+      "Grpc.AspNetCore.Server/2.47.0": {
+        "dependencies": {
+          "Grpc.Net.Common": "2.47.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Grpc.AspNetCore.Server.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.47.0.0"
+          }
+        }
+      },
+      "Grpc.Core/2.46.3": {
+        "dependencies": {
+          "Grpc.Core.Api": "2.47.0",
+          "System.Memory": "4.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Grpc.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.46.3.0"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-arm64/native/libgrpc_csharp_ext.arm64.so": {
+            "rid": "linux-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libgrpc_csharp_ext.x64.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libgrpc_csharp_ext.x64.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/grpc_csharp_ext.x64.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/grpc_csharp_ext.x86.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Grpc.Core.Api/2.47.0": {
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Grpc.Core.Api.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.47.0.0"
+          }
+        }
+      },
+      "Grpc.Net.Common/2.47.0": {
+        "dependencies": {
+          "Grpc.Core.Api": "2.47.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Grpc.Net.Common.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.47.0.0"
+          }
+        }
+      },
+      "Grpc.Tools/2.48.0-pre1": {},
+      "System.Memory/4.5.3": {},
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {}
+    }
+  },
+  "libraries": {
+    "server/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Google.Protobuf/3.21.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-91vdjMcbesfibUtE2n6bVWelT+7J7hExMb9WAEQXuM748+aoIrrUECkIBCmQG+RiM4KvEccVgutFdzl1l6G+Rw==",
+      "path": "google.protobuf/3.21.2",
+      "hashPath": "google.protobuf.3.21.2.nupkg.sha512"
+    },
+    "Grpc/2.46.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-79TsAcLBVl5J7AmtnV+GmgkhWlpK3D9JYJDhYxZGO0DKukbyrRxxcbaFlRZ84WGwTAW8LezrInUYgfiJi3zGVg==",
+      "path": "grpc/2.46.3",
+      "hashPath": "grpc.2.46.3.nupkg.sha512"
+    },
+    "Grpc.AspNetCore.Server/2.47.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SFoNM+2PbmvxH8OnwhNG7PNCI3twowtUio5WqzwuwW3GkMOcdxyZejo8YXlTw9vZTNvg2x01HDkrEGjSGsTx3w==",
+      "path": "grpc.aspnetcore.server/2.47.0",
+      "hashPath": "grpc.aspnetcore.server.2.47.0.nupkg.sha512"
+    },
+    "Grpc.Core/2.46.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lu7KP7BVWdvFXWbn/IFYHBQCpMohJwbLM1aL+nu2C0pY2CdS0idaUNAJNC2nZ60fXfqoxnSiERrIU6rC474oTw==",
+      "path": "grpc.core/2.46.3",
+      "hashPath": "grpc.core.2.46.3.nupkg.sha512"
+    },
+    "Grpc.Core.Api/2.47.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oZXapxH/2WHAVALghNauo+r/bp6zjgQ6r0v8FizLLQg0/j/FkK2u3WZ7cLOL9Y5H4oLg+wLclO8FSvNTQpNR5Q==",
+      "path": "grpc.core.api/2.47.0",
+      "hashPath": "grpc.core.api.2.47.0.nupkg.sha512"
+    },
+    "Grpc.Net.Common/2.47.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Cv76h7noEN2s9cwIdEspOeDjeqcU6Nm34OmjSbRhD/FDBXFmG7rmSfJTPCEB1LYjZWfmf7uUH+nYcHR1I7oQqw==",
+      "path": "grpc.net.common/2.47.0",
+      "hashPath": "grpc.net.common.2.47.0.nupkg.sha512"
+    },
+    "Grpc.Tools/2.48.0-pre1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-24DLZNM4peaJtQPHDNWgG4bOJn11xRvGeHOWpdydgRvXuCQtO+gHOiUIU1ZLZP4XeZRM1Ez5SHgQGXdg7B/2Mg==",
+      "path": "grpc.tools/2.48.0-pre1",
+      "hashPath": "grpc.tools.2.48.0-pre1.nupkg.sha512"
+    },
+    "System.Memory/4.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "path": "system.memory/4.5.3",
+      "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
+    }
+  }
+}
