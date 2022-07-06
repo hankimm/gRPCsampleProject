@@ -23,3 +23,6 @@ C:\Users\hkim\Documents\GitHub\gRPCproject\gRPCproject\client\obj\Debug\netcorea
 C:\Users\hkim\Documents\GitHub\gRPCproject\gRPCproject\client\obj\Debug\netcoreapp3.1\client.genruntimeconfig.cache
 C:\Users\hkim\Documents\GitHub\gRPCproject\gRPCproject\client\bin\Debug\netcoreapp3.1\Grpc.AspNetCore.Server.dll
 C:\Users\hkim\Documents\GitHub\gRPCproject\gRPCproject\client\bin\Debug\netcoreapp3.1\Grpc.Net.Common.dll
+C:\Users\hkim\Documents\GitHub\gRPCproject\gRPCproject\client\bin\Debug\netcoreapp3.1\ssl\ca.crt
+C:\Users\hkim\Documents\GitHub\gRPCproject\gRPCproject\client\bin\Debug\netcoreapp3.1\ssl\client.crt
+C:\Users\hkim\Documents\GitHub\gRPCproject\gRPCproject\client\bin\Debug\netcoreapp3.1\ssl\client.key

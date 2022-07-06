@@ -10,9 +10,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "proto", "proto", "{4E44B30E
 		sum.proto = sum.proto
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "client", "client\client.csproj", "{38908458-719E-4DC0-84D0-9DBDBA1ABD15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "client", "client\client.csproj", "{38908458-719E-4DC0-84D0-9DBDBA1ABD15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "server", "Server\server.csproj", "{AD394118-5B2B-4645-B6E4-905ED4E1AF13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "server", "Server\server.csproj", "{AD394118-5B2B-4645-B6E4-905ED4E1AF13}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{28F8A9DB-69F4-453E-9C37-77BF1287D88B}"
+	ProjectSection(SolutionItems) = preProject
+		ssl.sh = ssl.sh
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
