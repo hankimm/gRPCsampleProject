@@ -5,6 +5,8 @@ using Grpc.AspNetCore.Server;
 using Greet;
 using Sum;
 using System.Collections.Generic;
+using Grpc.Reflection;
+using Grpc.Reflection.V1Alpha;
 
 namespace server
 {
@@ -17,17 +19,25 @@ namespace server
 
             try
             {
-                var serverCert = File.ReadAllText("ssl/server.crt");
-                var serverKey = File.ReadAllText("ssl/server.key");
-                var keypair = new KeyCertificatePair(serverCert, serverKey);
-                var cacert = File.ReadAllText("ssl/ca.crt");
+                //var serverCert = File.ReadAllText("ssl/server.crt");
+                //var serverKey = File.ReadAllText("ssl/server.key");
+                //var keypair = new KeyCertificatePair(serverCert, serverKey);
+                //var cacert = File.ReadAllText("ssl/ca.crt");
 
-                var credentials = new SslServerCredentials(new List<KeyCertificatePair>() { keypair }, cacert, true);
+                //var credentials = new SslServerCredentials(new List<KeyCertificatePair>() { keypair }, cacert, true);
+
+                var reflectionServiceImpl = new ReflectionServiceImpl(GreetingService.Descriptor, ServerReflection.Descriptor);
+
                 server = new Server()
                 {
-                     Services = { GreetingService.BindService(new GreetingServiceImpl()) },
+                     Services = { 
+                        GreetingService.BindService(new GreetingServiceImpl()),
+                        ServerReflection.BindService(reflectionServiceImpl)
+                    },
+                     Ports = {new ServerPort("localhost", Port, ServerCredentials.Insecure) }
+
                      // Services = { SumService.BindService(new SumServiceImpl())},
-                    Ports = { new ServerPort("localhost", Port, credentials) }
+                   // Ports = { new ServerPort("localhost", Port, credentials) }
                 };
 
                 server.Start();

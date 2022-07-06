@@ -95,6 +95,19 @@
           "lib/netstandard2.1/Grpc.Net.Common.dll": {}
         }
       },
+      "Grpc.Reflection/2.47.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Protobuf": "3.19.4",
+          "Grpc.Core.Api": "2.47.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Grpc.Reflection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Grpc.Reflection.dll": {}
+        }
+      },
       "Grpc.Tools/2.48.0-pre1": {
         "type": "package",
         "build": {
@@ -257,6 +270,28 @@
         "packageIcon.png"
       ]
     },
+    "Grpc.Reflection/2.47.0": {
+      "sha512": "zv1+RNwg27QVV7RjRVOo4H6t+GfY/AEVsvB3udhK2YeHwD9OKqRr9CR/ew7TYfOTBGaC1MLld9h2uUbnqMWJxw==",
+      "type": "package",
+      "path": "grpc.reflection/2.47.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "grpc.reflection.2.47.0.nupkg.sha512",
+        "grpc.reflection.nuspec",
+        "lib/net462/Grpc.Reflection.dll",
+        "lib/net462/Grpc.Reflection.pdb",
+        "lib/net462/Grpc.Reflection.xml",
+        "lib/netstandard1.5/Grpc.Reflection.dll",
+        "lib/netstandard1.5/Grpc.Reflection.pdb",
+        "lib/netstandard1.5/Grpc.Reflection.xml",
+        "lib/netstandard2.0/Grpc.Reflection.dll",
+        "lib/netstandard2.0/Grpc.Reflection.pdb",
+        "lib/netstandard2.0/Grpc.Reflection.xml",
+        "packageIcon.png"
+      ]
+    },
     "Grpc.Tools/2.48.0-pre1": {
       "sha512": "24DLZNM4peaJtQPHDNWgG4bOJn11xRvGeHOWpdydgRvXuCQtO+gHOiUIU1ZLZP4XeZRM1Ez5SHgQGXdg7B/2Mg==",
       "type": "package",
@@ -360,6 +395,7 @@
       "Grpc.AspNetCore.Server >= 2.47.0",
       "Grpc.Core >= 2.46.3",
       "Grpc.Core.Api >= 2.47.0",
+      "Grpc.Reflection >= 2.47.0",
       "Grpc.Tools >= 2.48.0-pre1"
     ]
   },
@@ -370,9 +406,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hkim\\Documents\\GitHub\\gRPCproject\\gRPCproject\\Server\\Server.csproj",
-      "projectName": "Server",
-      "projectPath": "C:\\Users\\hkim\\Documents\\GitHub\\gRPCproject\\gRPCproject\\Server\\Server.csproj",
+      "projectUniqueName": "C:\\Users\\hkim\\Documents\\GitHub\\gRPCproject\\gRPCproject\\Server\\server.csproj",
+      "projectName": "server",
+      "projectPath": "C:\\Users\\hkim\\Documents\\GitHub\\gRPCproject\\gRPCproject\\Server\\server.csproj",
       "packagesPath": "C:\\Users\\hkim\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\hkim\\Documents\\GitHub\\gRPCproject\\gRPCproject\\Server\\obj\\",
       "projectStyle": "PackageReference",
@@ -424,6 +460,10 @@
             "version": "[2.46.3, )"
           },
           "Grpc.Core.Api": {
+            "target": "Package",
+            "version": "[2.47.0, )"
+          },
+          "Grpc.Reflection": {
             "target": "Package",
             "version": "[2.47.0, )"
           },

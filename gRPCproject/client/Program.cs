@@ -14,13 +14,13 @@ namespace client
         const string target = "127.0.0.1:50051";
         static async Task Main(string[] args)
         {
-            var clientCert = File.ReadAllText("ssl/client.crt");
-            var clientKey = File.ReadAllText("ssl/client.key");
-            var caCrt = File.ReadAllText("ssl/ca.crt");
+            //var clientCert = File.ReadAllText("ssl/client.crt");
+            //var clientKey = File.ReadAllText("ssl/client.key");
+            //var caCrt = File.ReadAllText("ssl/ca.crt");
 
-            var channelCredentials = new SslCredentials(caCrt, new KeyCertificatePair(clientCert, clientKey));
-            Channel channel = new Channel("localhost", 50051, channelCredentials);
-
+            //var channelCredentials = new SslCredentials(caCrt, new KeyCertificatePair(clientCert, clientKey));
+            //Channel channel = new Channel("localhost", 50051, channelCredentials);
+            Channel channel = new Channel("localhost", 50051, ChannelCredentials.Insecure);
             await channel.ConnectAsync().ContinueWith((task) =>
             {
                 if (task.Status == TaskStatus.RanToCompletion)

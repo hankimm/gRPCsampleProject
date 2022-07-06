@@ -13,6 +13,7 @@
           "Grpc.AspNetCore.Server": "2.47.0",
           "Grpc.Core": "2.46.3",
           "Grpc.Core.Api": "2.47.0",
+          "Grpc.Reflection": "2.47.0",
           "Grpc.Tools": "2.48.0-pre1"
         },
         "runtime": {
@@ -108,6 +109,18 @@
           }
         }
       },
+      "Grpc.Reflection/2.47.0": {
+        "dependencies": {
+          "Google.Protobuf": "3.21.2",
+          "Grpc.Core.Api": "2.47.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Grpc.Reflection.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.47.0.0"
+          }
+        }
+      },
       "Grpc.Tools/2.48.0-pre1": {},
       "System.Memory/4.5.3": {},
       "System.Runtime.CompilerServices.Unsafe/4.5.2": {}
@@ -160,6 +173,13 @@
       "sha512": "sha512-Cv76h7noEN2s9cwIdEspOeDjeqcU6Nm34OmjSbRhD/FDBXFmG7rmSfJTPCEB1LYjZWfmf7uUH+nYcHR1I7oQqw==",
       "path": "grpc.net.common/2.47.0",
       "hashPath": "grpc.net.common.2.47.0.nupkg.sha512"
+    },
+    "Grpc.Reflection/2.47.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zv1+RNwg27QVV7RjRVOo4H6t+GfY/AEVsvB3udhK2YeHwD9OKqRr9CR/ew7TYfOTBGaC1MLld9h2uUbnqMWJxw==",
+      "path": "grpc.reflection/2.47.0",
+      "hashPath": "grpc.reflection.2.47.0.nupkg.sha512"
     },
     "Grpc.Tools/2.48.0-pre1": {
       "type": "package",

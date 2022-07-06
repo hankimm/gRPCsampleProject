@@ -26,3 +26,4 @@ C:\Users\hkim\Documents\GitHub\gRPCproject\gRPCproject\Server\bin\Debug\netcorea
 C:\Users\hkim\Documents\GitHub\gRPCproject\gRPCproject\Server\bin\Debug\netcoreapp3.1\ssl\ca.crt
 C:\Users\hkim\Documents\GitHub\gRPCproject\gRPCproject\Server\bin\Debug\netcoreapp3.1\ssl\server.crt
 C:\Users\hkim\Documents\GitHub\gRPCproject\gRPCproject\Server\bin\Debug\netcoreapp3.1\ssl\server.key
+C:\Users\hkim\Documents\GitHub\gRPCproject\gRPCproject\Server\bin\Debug\netcoreapp3.1\Grpc.Reflection.dll
