@@ -18,8 +18,8 @@ namespace server
             {
                 server = new Server()
                 {
-                    // Services = { GreetingService.BindService(new GreetingServiceImpl()) },
-                     Services = { SumService.BindService(new SumServiceImpl())},
+                     Services = { GreetingService.BindService(new GreetingServiceImpl()) },
+                     // Services = { SumService.BindService(new SumServiceImpl())},
                     Ports = { new ServerPort("localhost", Port, ServerCredentials.Insecure) }
                 };
 

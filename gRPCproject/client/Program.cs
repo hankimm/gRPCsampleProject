@@ -22,23 +22,50 @@ namespace client
             });
 
             // var client = new DummyService.DummyServiceClient(channel);
-             // var client = new GreetingService.GreetingServiceClient(channel);
-            var client = new SumService.SumServiceClient(channel);
+             var client = new GreetingService.GreetingServiceClient(channel);
+            //var client = new SumService.SumServiceClient(channel);
 
             // Sum Tasks
             //DoSum(client);
             //await DoComputeAverage(client);
             //await DoPrimeDecomp(client);
-            await DoFindMax(client);
+            // await DoFindMax(client);
 
             // Greet Tasks
             //DoSimpleGreet(client);
             //await DoManyGreets(client);
             //await DoLongGreet(client);
             //await DoGreetEveryone(client);
+            await DoDeadLine(client);
             channel.ShutdownAsync().Wait();
             Console.ReadKey();
         }
+        public static Task DoDeadLine(GreetingService.GreetingServiceClient client)
+        {
+            try
+            {
+                var greeting = new Greeting()
+                {
+                    FirstName = "Hyesu",
+                    LastName = "Kwon"
+                };
+                var request = new GreetingRequest()
+                {
+                    Greeting = greeting
+                };
+                var response = client.greetWithDeadLine(request,
+                    deadline: DateTime.UtcNow.AddMilliseconds(100));
+                Console.WriteLine(response.Result);
+
+            }
+            catch (RpcException e) when (e.StatusCode == StatusCode.DeadlineExceeded)
+            {
+                Console.WriteLine("Error: " + e.Status.Detail);
+            }
+
+            return Task.CompletedTask;
+        }
+
         public static void DoSum(SumService.SumServiceClient client)
         {
             var request = new SumRequest()
